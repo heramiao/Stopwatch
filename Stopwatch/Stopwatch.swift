@@ -20,7 +20,7 @@ class Stopwatch {
     startTime = nil
   }
 
-  var elapsedTime: TimeInterval {
+  var elapsedTime: TimeInterval? {
     if let startTime = self.startTime {
       return -1 * startTime.timeIntervalSinceNow // could also just say -startTime.timeIntervalSinceNow
     } else {
@@ -28,15 +28,24 @@ class Stopwatch {
     }
   }
   
-  var elapsedTimeAsString: String {
-    let diffMin = Int((elapsedTime / 60).rounded(.towardZero))
-    let diffSecDouble = elapsedTime.truncatingRemainder(dividingBy: 60)
+  var elapsedTimeAsString: String? {
+    let diffMin = Int((elapsedTime! / 60).rounded(.towardZero))
+    let diffSecDouble = elapsedTime!.truncatingRemainder(dividingBy: 60)
     let diffSec = Int(diffSecDouble.rounded(.towardZero))
     let diffSecFraction = Int(round(diffSecDouble.truncatingRemainder(dividingBy: 1) * 10))
     
     let timeString: String = String(format: "%02d:%02d.%01d", diffMin, diffSec, diffSecFraction)
     
     return timeString
+  }
+  
+  var isRunning: Bool {
+    if let checkElapsedTime = elapsedTime {
+      return true
+    }
+    else {
+      return false
+    }
   }
   
 }
