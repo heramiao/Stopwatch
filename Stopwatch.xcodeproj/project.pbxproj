@@ -13,6 +13,7 @@
 		6324994A21383FAC00D1991B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6324994921383FAC00D1991B /* Assets.xcassets */; };
 		6324994D21383FAC00D1991B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6324994B21383FAC00D1991B /* LaunchScreen.storyboard */; };
 		639C1CB121384B0500C24BB7 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639C1CB021384B0500C24BB7 /* Stopwatch.swift */; };
+		63D34F85213A19B200E3FAF0 /* earth-608344-unsplash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 63D34F84213A19B200E3FAF0 /* earth-608344-unsplash.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		6324994C21383FAC00D1991B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6324994E21383FAC00D1991B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		639C1CB021384B0500C24BB7 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		63D34F84213A19B200E3FAF0 /* earth-608344-unsplash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "earth-608344-unsplash.jpg"; path = "../../../../../Desktop/earth-608344-unsplash.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		6324994121383FAA00D1991B /* Stopwatch */ = {
 			isa = PBXGroup;
 			children = (
+				63D34F84213A19B200E3FAF0 /* earth-608344-unsplash.jpg */,
 				6324994221383FAA00D1991B /* AppDelegate.swift */,
 				6324994421383FAA00D1991B /* ViewController.swift */,
 				6324994621383FAA00D1991B /* Main.storyboard */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6324994D21383FAC00D1991B /* LaunchScreen.storyboard in Resources */,
+				63D34F85213A19B200E3FAF0 /* earth-608344-unsplash.jpg in Resources */,
 				6324994A21383FAC00D1991B /* Assets.xcassets in Resources */,
 				6324994821383FAA00D1991B /* Main.storyboard in Resources */,
 			);

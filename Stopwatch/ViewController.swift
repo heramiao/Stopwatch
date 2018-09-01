@@ -13,6 +13,14 @@ class ViewController: UIViewController {
   let stopwatch = Stopwatch()
   
   @IBOutlet weak var elapsedTimeLabel: UILabel!
+  
+  @objc func updateElapsedTimeLabel(timer: Timer) {
+    if stopwatch.isRunning {
+      elapsedTimeLabel.text = stopwatch.elapsedTimeAsString
+    } else {
+      timer.invalidate()
+    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -25,6 +33,7 @@ class ViewController: UIViewController {
   }
 
   @IBAction func startButtonTapped(sender: UIButton) {
+    Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(ViewController.updateElapsedTimeLabel), userInfo: nil, repeats: true)
     stopwatch.start()
   }
   

@@ -40,7 +40,7 @@ class Stopwatch {
   }
   
   var isRunning: Bool {
-    if let checkElapsedTime = elapsedTime {
+    if elapsedTime != nil {
       return true
     }
     else {
